@@ -16,6 +16,15 @@
   padding: 0;
 }
 
+canvas {
+  position: absolute;
+  pointer-events: none;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+
 .tab-content {
   opacity: 0;
 }
@@ -370,21 +379,41 @@ body {
   position: relative;
   width: 90%;
   max-width: 1000px;
-  height: 35%;
+  height: 50%;
   margin: auto;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
 }
 #tab1 .home-wrap-title {
   color: #eee;
+  border: 2px solid #3a3a3a;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 3rem;
+  border-radius: 22px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  text-align: center;
+  line-height: clamp(3rem, 3.5vw, 4rem);
 }
 #tab1 .home-wrap-title h1 {
-  font-size: clamp(3rem, 4vw, 4.5rem);
+  font-size: clamp(2rem, 2.5vw, 3rem);
   font-weight: 400;
 }
-#tab1 .home-wrap-title h3 {
-  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
-  font-weight: 400;
+#tab1 .home-wrap-title h1 .orange {
+  border: 2px solid orange;
+  border-radius: 10px;
+  padding: 0.2rem 0.4rem;
+}
+#tab1 .home-wrap-title h1 .blue {
+  border: 2px solid blue;
+  padding: 0.2rem 0.4rem;
+  border-radius: 10px;
+}
+#tab1 .home-wrap-title h1 .purple {
+  border: 2px solid purple;
+  padding: 0.2rem 0.4rem;
+  border-radius: 10px;
 }
 
 #tab2 {
@@ -392,6 +421,64 @@ body {
   width: 100%;
   height: 100%;
   z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#tab2 .projects-wrap {
+  position: relative;
+  width: 40%;
+  max-width: 1000px;
+  height: 50%;
+  margin: auto;
+}
+#tab2 .projects-wrap-entry {
+  color: #eee;
+  border: 2px solid #3a3a3a;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 0.8rem;
+  border-radius: 22px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  text-align: left;
+}
+#tab2 .projects-wrap-entry .project-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 0rem;
+  bottom: 0rem;
+}
+#tab2 .projects-wrap-entry .project-wrap-title-name {
+  font-size: 1rem;
+  line-height: clamp(1rem, 3.5vw, 1rem);
+}
+#tab2 .projects-wrap-entry .project-wrap-title-desc {
+  opacity: 0.6;
+  font-size: 0.6rem;
+  line-height: clamp(1rem, 3.5vw, 1rem);
+}
+#tab2 .projects-wrap-entry .project-wrap-tags {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  max-height: 1.6rem;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  gap: 8px;
+}
+#tab2 .projects-wrap-entry .project-wrap-tags-rect {
+  display: flex;
+  align-items: center;
+  color: #eee;
+  border: 2px solid #3a3a3a;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 0.6rem;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  font-size: 0.6rem;
+  font-weight: bold;
 }
 
 #tab3 {
