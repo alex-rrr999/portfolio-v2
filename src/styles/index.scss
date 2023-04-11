@@ -9,6 +9,10 @@
     --color-violet: #7928ca;
 }
   
+
+
+
+
 *,
 *::before,
 *::after {
@@ -16,6 +20,9 @@
     margin: 0;
     padding: 0;
 }
+
+
+
 
 .tab-content {
     opacity: 0;
@@ -26,10 +33,17 @@
 }
   
 
+
+
+
 body {
     background-color: rgb(20, 20, 20);
     font-family: 'Meidinger', sans-serif;
 }
+
+
+
+
 
 .tColor1, .tColor2, .tColor3 {
     &::after {
@@ -451,6 +465,8 @@ body {
             }
         }
     }
+
+
 }
 
 #tab2 {
