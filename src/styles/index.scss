@@ -3,6 +3,11 @@
     src: url('../../static/fonts/Book/Miedinger_-Book.otf') format('truetype');
 }
 
+@font-face {
+    font-family: 'MeidingerBold';
+    src: url('../../static/fonts/Bold/Miedinger_-Bold.otf') format('truetype');
+}
+
 :root {
     --color-pink: #ff002f;
     --color-cyan: #50e3c2;
@@ -451,29 +456,30 @@ body {
         &-title {
             color: #eee;
             border: 2px solid #3a3a3a;
-            background-color: rgba($color: #000000, $alpha: 0.3);
+            background-color: rgba($color: #000000, $alpha: 0.4);
             padding: 3rem;
             border-radius: 22px;
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
             text-align: center;
-            line-height: clamp(3rem, 3.5vw, 4rem);
+            line-height: clamp(3.5rem, 4vw, 4.5rem);
             h1 {
-                font-size: clamp(2rem, 2.5vw, 3rem);
-                font-weight: 400;
+                font-size: clamp(1.8rem, 2.3vw, 3rem);
+                font-family: 'MeidingerBold', sans-serif;
+                font-weight: 500;
 
                 .orange {
-                    border: 2px solid orange;
+                    background-color:rgba(255, 166, 0, 0.8);
                     border-radius: 10px;
                     padding: 0.2rem 0.4rem;
                 }
                 .blue {
-                    border: 2px solid blue;
+                    background-color:rgba(22, 157, 230, 0.8);
                     padding: 0.2rem 0.4rem;
                     border-radius: 10px;
                 }
                 .purple {
-                    border: 2px solid purple;
+                    background-color:rgba(143, 34, 187, 0.8);
                     padding: 0.2rem 0.4rem;
                     border-radius: 10px;
                 }
