@@ -2,84 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alex's Portfolio</title>
-    <link rel="stylesheet" href="./styles/main.css">
-    <script type="module" src="./js/script.js"></script>
-    <canvas id="bg" class="webgl"></canvas>
+    <link rel="stylesheet" type="text/css" href="./styles/index.scss" />
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <title>Alexander Rodriguez</title>
 </head>
-
-
 <body>
-
-
-
-
-<header>
-    <nav class="nav-bar">
-        <span class="name">ALEXANDER RODRIGUEZ</span>
-            <span class="nav-wrapper">
-                <a href="#section-about" class="about">About</a> 
-                <a href="#section-projects" class="projects">Projects</a>
-            </span>
-        <span class="socials">
-            <span class="socials-wrapper">
-                <a href="#" class="linkedin">link</a>
-                <a href="#" class="linkedin">yt</a>
-                <a href="#" class="linkedin">gh</a>
-                <a href="#" class="linkedin">in</a>
-            </span>
-        </span>
-    </nav>
-<div class="line"></div>
-</header>
-
-
-
-
-
-
-
-<span class="spacer">
-        <span class="home-paragraph">
-            I'm a current student at Cascadia College in Bothell, Washington, pursuing a career in Data Science <br><br> You can view my works on this page
-        </span>
-
-
-
-
-        <section id="section-about">
-            <span class="about-title">ABOUT ME</span>
-            <span class="about-body">im crazy</span>
+    <div id="container"></div>
+    <script id="vertexShader" type="x-shader/x-vertex"></script>
+    <header>
+        <nav id="navigation">
+            <ul class="home">
+                <li class="tab active tColor1" data-target="tab1" data-default><span class="icon-title ico-1">Home</span><i class="las la-home"></i></li>
+                <li class="tab hoverable tColor2" data-target="tab2"><span class="icon-title ico-2">Projects</span><i class="las la-paint-brush"></i></li>
+                <li class="tab hoverable tColor3" data-target="tab3"><span class="icon-title ico-3">About me</span><i class="las la-smile"></i></li>
+                <div class="bar-wrap">
+                    <hr class="home-bar">
+                </div>
+                <li><span class="icon-title ico-4">rodrialex.edu@gmail.com<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#bababa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></span><i class="las la-at"></i></li>
+                <li><span class="icon-title ico-5">in/alex-rrr999<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#bababa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></span><i class="lab la-linkedin-in"></i></li>
+                <li><span class="icon-title ico-6">github.com/alex-rrr999<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#bababa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></span><i class="lab la-github-alt"></i></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside class="gradient-wrapper">
+            <div class="gradient gradient-1" style="--color:var(--color-pink); --opacity:0.2;"></div>
+            <div class="gradient gradient-2" style="--color:var(--color-cyan); --opacity:0.4;"></div>
+            <div class="gradient gradient-3" style="--color:var(--color-violet); --opacity:0.3;"></div>
+        </aside>
+        <section id="tab1" class="tab-content active">
+            <div class="home-wrap">
+                <div class="home-wrap-title">
+                    <h1>Hi, I'm Alex!</h1>
+                    <h3>an aspiring Data Scientist and college student<br/> with a passion for uncovering insights from data. </h3>
+                </div>
+            </div>
         </section>
-
-
-
-        <section id="section-projects">
-            <span class="projects-title">projects</span>
-            <span class="projects-body">a</span>
+        <section id="tab2" class="tab-content">
+            <div class="projects-wrap">
+                blah blah
+            </div>
         </section>
-
-
-
-    <footer>
-        <section id="contact">
-            <span class="contact-title">Contact</span>
-            <span class="contact-body">rodrialex.edu@gmail.com</span>
+        <section id="tab3" class="tab-content">
+            <div class="about-wrap">
+                bruh
+            </div>
         </section>
-    </footer>
-
-</span>
+    </main>
+    <script type="module" src="./js/index.js"></script>
 </body>
-
-<div class="blur-rectangle">
-    <div class="blur-container">
-        <canvas id="gradient-canvas" data-transition-in />
-    </div>
-  </div>
-  
-    <!-- <canvas id="gradient-canvas" data-transition-in /> -->
 </html>
-
-
-
