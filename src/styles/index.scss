@@ -452,14 +452,31 @@ body {
             color: #eee;
             border: 2px solid #3a3a3a;
             background-color: rgba($color: #000000, $alpha: 0.3);
-            padding: 6rem;
+            padding: 3rem;
             border-radius: 22px;
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
             text-align: center;
+            line-height: clamp(3rem, 3.5vw, 4rem);
             h1 {
                 font-size: clamp(2rem, 2.5vw, 3rem);
                 font-weight: 400;
+
+                .orange {
+                    border: 2px solid orange;
+                    border-radius: 10px;
+                    padding: 0.2rem 0.4rem;
+                }
+                .blue {
+                    border: 2px solid blue;
+                    padding: 0.2rem 0.4rem;
+                    border-radius: 10px;
+                }
+                .purple {
+                    border: 2px solid purple;
+                    padding: 0.2rem 0.4rem;
+                    border-radius: 10px;
+                }
             }
         }
     }

@@ -97,7 +97,7 @@ function createPrimitive() {
 var options = {
   perlin: {
     vel: 0.002,
-    speed: 0.00050,
+    speed: 0.0002,
     perlins: 1.0,
     decay: 0.10,
     complex: 0.30,
