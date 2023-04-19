@@ -467,6 +467,7 @@ body {
                 font-size: clamp(1.8rem, 2.3vw, 3rem);
                 font-family: 'MeidingerBold', sans-serif;
                 font-weight: 500;
+                // text-overflow: none;
 
                 .orange {
                     background-color:rgba(255, 166, 0, 0.8);
@@ -475,8 +476,10 @@ body {
                 }
                 .blue {
                     background-color:rgba(22, 157, 230, 0.8);
-                    padding: 0.2rem 0.4rem;
+                    padding: 0.4rem 0.4rem;
                     border-radius: 10px;
+                    // text-size-adjust: 100%;
+                    white-space: nowrap;
                 }
                 .purple {
                     background-color:rgba(143, 34, 187, 0.8);
@@ -488,6 +491,7 @@ body {
     }
 }
 #tab2 {
+
     position: absolute;
     width: 100%;
     height: 100%;
@@ -670,6 +674,58 @@ body {
         }
 
         .about-wrap-left {
+
+
+
+            .about-wrap-left-main {
+
+            .about-tag-wrap {
+                left: 1rem;
+                bottom: 1rem;
+
+                position: absolute;
+                display: flex;
+                justify-content: space-evenly;
+                flex-direction: row;    
+            
+                max-height: 1.6rem;     
+                max-width: fit-content;
+                gap: 8px;
+            
+
+                .about-tag-rect {
+                    pointer-events: none;
+                    height: 1rem;
+                    display: flex;
+                    align-items: center;
+                    color: #eee;
+                    border: 2px solid #3a3a3a;
+                    background-color: rgba($color: #000000, $alpha: 0.3);
+                    padding: 0.6rem;
+                    border-radius: 10px;
+                    backdrop-filter: blur(10px);
+                    -webkit-backdrop-filter: blur(10px);
+                    font-size: 0.6rem;
+                    font-weight: bold;
+                    // text-align: center;
+                    // line-height: clamp(3rem, 3.5vw, 1rem);
+                
+                }
+
+
+            }
+
+
+            
+            
+        }
+
+
+
+
+
+
+
             position: relative;
             width: 100%;
             height: 100%;
@@ -738,7 +794,15 @@ body {
     }
 }
 
+
+
+
+
+
 @media (max-width: 780px) {
+    .about-wrap-right::-webkit-scrollbar { display: none;}
+
+
 
     #navigation {
         position: fixed;

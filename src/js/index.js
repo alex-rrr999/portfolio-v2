@@ -204,19 +204,17 @@ function animation() {
 
 
 
+function resetScrollPosition() {
+  window.scrollTo(0, 0);
+}
 
 
 
 
 
-
-
-
-
-
-
-
-
+function triggerResize() {
+  window.dispatchEvent(new Event('resize'));
+}
 
 
 
@@ -256,7 +254,14 @@ tabs.forEach((tab) => {
 
         switch (target) {
           
-          case 'tab1':
+          case 'tab1': 
+          resetScrollPosition();
+
+
+            document.documentElement.style.overflow = 'hidden';
+            document.body.scroll = "no";
+
+
             newPosition.set(0, -10, 17);
             meshPosition.set(0, 0, 0);
             // newPosition = { x: 15, y: 15, z: 10 };
@@ -273,11 +278,19 @@ tabs.forEach((tab) => {
                   {duration: 0.5, opacity: 0, pointerEvents: 'none'});
               }
             });
+
+
+            triggerResize();
             break;
 
           case 'tab2':
+
+          document.documentElement.style.overflow = 'auto';
+          document.body.scroll = "yes";
+
+
             newPosition.set(0, 10, 11);
-            meshPosition.set(-13, -11, 0);
+            meshPosition.set(-5, -5, 0);
             // newPosition = { x: -0.8, y: -12, z: 10 };
             // meshPosition = { x: -1.9, y: -1.3, z: 3 };
             tabContents.forEach((tabContent) => {
@@ -292,13 +305,21 @@ tabs.forEach((tab) => {
                   { duration: 0.5, opacity: 0, pointerEvents: 'none'});
               }
             });
+
+
             break;
 
           case 'tab3':
+
+          document.documentElement.style.overflow = 'auto';
+          document.body.scroll = "yes";
+
+
+            // newPosition.set(15, 15, 14);
             newPosition.set(15, 15, 14);
-            meshPosition.set(13, 11, 0);
-            // newPosition = { x: 10, y: 10, z: 11 };
-            // meshPosition = { x: 2, y: 0, z: 1 };
+
+            meshPosition.set(8, 4, 0);
+
             tabContents.forEach((tabContent) => {
               if (tabContent.id === target) {
                 gsap.fromTo(
