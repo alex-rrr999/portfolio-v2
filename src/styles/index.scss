@@ -665,6 +665,28 @@ body {
         gap: 1.5rem;
 
 
+
+
+        .about- {
+            pointer-events: none;
+            height: 1rem;
+            display: flex;
+            align-items: center;
+            color: #eee;
+            border: 2px solid #3a3a3a;
+            background-color: rgba($color: #000000, $alpha: 0.3);
+            padding: 0.6rem;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            font-size: 0.6rem;
+            font-weight: bold;
+            // text-align: center;
+            // line-height: clamp(3rem, 3.5vw, 1rem);
+        
+        }
+
+
         .center-wrapper {
             margin-top: auto;
             margin-bottom: auto;
@@ -678,6 +700,37 @@ body {
 
 
             .about-wrap-left-main {
+                .name-about-wrap {
+                    position: relative;
+                    display: flex;
+                    flex-direction: row;    
+                
+                    max-height: 1.6rem;     
+                    max-width: 100%;
+
+
+                    pointer-events: none;
+                    height: 2rem;
+                    width: fit-content;
+                    display: flex;
+                    align-items: center;
+                    color: white;
+                    border: 1px solid #3a3a3a;
+                    background-color: rgba($color: #000000, $alpha: 0.3);
+                    padding: 0.6rem;
+                    border-radius: 10px;
+                    backdrop-filter: blur(10px);
+                    -webkit-backdrop-filter: blur(10px);
+                    font-size: 1.1rem;
+                    font-weight: bold;
+
+
+
+
+
+
+                
+                }
 
             .about-tag-wrap {
                 left: 1rem;
@@ -771,13 +824,13 @@ body {
 
                 display: flex;
                 flex-direction: column;
-                align-items: center;
-                justify-content: center;
+                align-items: left;
+                justify-content: top;
 
                 color: #eee;
                 border: 2px solid #3a3a3a;
                 background-color: rgba($color: #000000, $alpha: 0.4);
-                padding: 3rem;
+                padding: 1rem;
                 margin-bottom: 1.5rem;
                 border-radius: 22px;
                 backdrop-filter: blur(10px);
@@ -788,6 +841,23 @@ body {
                 &:nth-last-child(1) {
                     margin-bottom: 7rem;
                 }
+                .about-title {
+                    pointer-events: none;
+                    height: 2rem;
+                    width: fit-content;
+                    display: flex;
+                    align-items: center;
+                    color: white;
+                    border: 1px solid #3a3a3a;
+                    background-color: rgba($color: #000000, $alpha: 0.3);
+                    padding: 0.6rem;
+                    border-radius: 10px;
+                    backdrop-filter: blur(10px);
+                    -webkit-backdrop-filter: blur(10px);
+                    font-size: 1.1rem;
+                    font-weight: bold;
+                }
+
 
             }
         }
@@ -803,6 +873,23 @@ body {
     .about-wrap-right::-webkit-scrollbar { display: none;}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
     #navigation {
         position: fixed;
@@ -836,7 +923,7 @@ body {
             &-entry {   
                 margin-top: 4rem;
                 width: 23rem;
-                height: 28rem;
+                height: 28.4rem;
                 color: #eee;
                 border: 2px solid #3a3a3a;
                 background-color: rgba($color: #000000, $alpha: 0.3);
@@ -869,14 +956,25 @@ body {
                     position: relative;
                     left: 0rem;
                     bottom: 0rem;
+
                     .project-wrap-bottom {
                         // background-color: red;
                         max-width: fit-content;
                         display: flex;
                         flex-direction: row;
                         justify-content: space-evenly;
-                        gap: 3rem;
+
+                    .project-wrap-tags-rect{
+                        min-height: 2rem;
+                    }
+
+                    .project-wrap-tags-rect-a {
+                        position: absolute;
+                        right: 0.2rem;
+                        pointer-events: all;
                         
+                    }
+
     
     
                     }

@@ -695,7 +695,7 @@ body {
   #tab2 .projects-wrap-entry {
     margin-top: 4rem;
     width: 23rem;
-    height: 28rem;
+    height: 28.4rem;
     color: #eee;
     border: 2px solid #3a3a3a;
     background-color: rgba(0, 0, 0, 0.3);
@@ -730,7 +730,14 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    gap: 3rem;
+  }
+  #tab2 .projects-wrap-entry .project-content .project-wrap-bottom .project-wrap-tags-rect, #tab2 .projects-wrap-entry .project-content .project-wrap-bottom .project-wrap-tags-rect-a {
+    min-height: 2rem;
+  }
+  #tab2 .projects-wrap-entry .project-content .project-wrap-bottom .project-wrap-tags-rect-a {
+    position: absolute;
+    right: 0.2rem;
+    pointer-events: all;
   }
   #tab2 .projects-wrap-entry .project-wrap-title-name {
     padding-top: 1rem;
