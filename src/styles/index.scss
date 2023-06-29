@@ -739,15 +739,15 @@ body {
                 .about-wrap-left-wrapper {
 
                     .about-image img {
-                        // position: absolute;
+                        position: relative;
                         display: flex;
                         align-items: center;
+                        
                         opacity: 0.5;
-                        height: 33vh;
-                        max-height: 33vh;
+                        // height: 33vh;
+                        max-height: 20rem;
                         display: flex;
                         margin: auto;
-                        position: relative;
                         border-radius: 30px !important;
                         // border: 4px solid #3a3a3a;
                         // transform: scale(0.2);
