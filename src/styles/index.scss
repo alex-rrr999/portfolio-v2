@@ -734,7 +734,7 @@ body {
                 display: flex;
                 align-content: center;
                 flex-direction: row;
-                padding-bottom: 26rem;
+                padding-bottom: 30rem;
 
                 .about-wrap-left-wrapper {
 
@@ -900,10 +900,23 @@ body {
             flex-direction: column;
 
             .about-wrap-body {
+                display: flex;
+                flex-direction: column;
 
+                .skills-icons {
+                    // background-color: white;
+                    display: flex;
+                    margin: auto;
+                    flex-direction: row;
+                    gap: 6px;
+                    padding-top: 1.2rem;
+                
 
-                .svg-wrapper object {
-
+                .svg-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                }
+                .svg-wrapper img {
                     border-radius: 8px !important;
                     // border: 4px solid #3a3a3a;
                     // transform: scale(0.2);
@@ -911,21 +924,22 @@ body {
 
                     border: 2px solid #3a3a3a;
                     background-color: rgba($color: #000000, $alpha: 0.3);
-                    padding: 0.2rem;
+                    padding: 0.25rem;
                     backdrop-filter: blur(10px);
                     -webkit-backdrop-filter: blur(10px);
                     font-size: 0.6rem;
 
 
 
-                    max-width: 2rem;
-                    max-height: 2rem;
+                    max-width: 2.5rem;
+                    max-height: 2.5rem;
 
-                    .skills-ico object {
+                    .skills-ico img {
                         // background-color: white;
 
                         max-width: 2rem;
                     }
+                }
                 }
 
 
