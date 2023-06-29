@@ -792,6 +792,11 @@ body {
                 }
 
                 .about-wrapper-wrapper {
+                    .about-tag-rect img {
+                        max-width: 1.1rem;
+                        bottom:0.5px;
+
+                    }
                     .about-tag-wrap {
 
                         display: flex;
