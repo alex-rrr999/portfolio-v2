@@ -20,8 +20,8 @@ export default defineConfig({
         viteStaticCopy({
             targets: [
                 {
-                    src: '.well-known/*',
-                    dest: ''
+                    src: '../static/.well-known/', // Replace with the path to the folder you want to copy
+                    dest: '' // Destination within the dist directory
                 }
             ]
         })
