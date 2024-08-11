@@ -1,8 +1,9 @@
-import copy from 'vite-plugin-copy';
+import { defineConfig } from 'vite';
+import { viteStaticCopy } from 'vite-plugin-static-copy';
 
 const isCodeSandbox = 'SANDBOX_URL' in process.env || 'CODESANDBOX_HOST' in process.env;
 
-export default {
+export default defineConfig({
     root: 'src/',
     publicDir: '../static/',
     base: './',
@@ -16,10 +17,13 @@ export default {
         sourcemap: true
     },
     plugins: [
-        copy({
+        viteStaticCopy({
             targets: [
-                { src: '.well-known', dest: '../dist' }
+                {
+                    src: '.well-known/*',
+                    dest: ''
+                }
             ]
         })
     ]
-}
+});
