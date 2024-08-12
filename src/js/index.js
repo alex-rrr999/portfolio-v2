@@ -258,7 +258,7 @@ tabs.forEach((tab) => {
           resetScrollPosition();
 
 
-            document.documentElement.style.overflow = 'hidden';
+            document.documentElement.style.overflowY = 'auto';
             document.body.scroll = "no";
 
 
@@ -285,7 +285,7 @@ tabs.forEach((tab) => {
 
           case 'tab2':
 
-          document.documentElement.style.overflow = 'hidden';
+          document.documentElement.style.overflowY = 'auto';
           document.body.scroll = "yes";
 
 
