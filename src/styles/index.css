@@ -417,7 +417,7 @@ body {
   white-space: nowrap;
 }
 #tab1 .home-wrap-title h1 .purple {
-  background-color: rgba(143, 34, 187, 0.8);
+  background-color: rgb(35, 64, 143);
   padding: 0.2rem 0.4rem;
   border-radius: 10px;
 }

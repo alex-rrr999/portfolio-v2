@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/89/three.min.js'></script>
     <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js'></script> -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'></script>
     <script src='//cdnjs.cloudflare.com/ajax/libs/dat-gui/0.5/dat.gui.min.js'></script>
-    <script  src="./js/perlin.js"></script>
+    <!-- <script  src="./js/perlin.js"></script> -->
 
     <title>Alexander Rodriguez</title>
-  <script type="module" crossorigin src="./assets/index-044a9fa4.js"></script>
-  <link rel="stylesheet" href="./assets/index-4c731497.css">
+  <script type="module" crossorigin src="./assets/index-DOMHrPi5.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-CFquFGYo.css">
 </head>
+
 <body>
     <div id="containerish"></div>
 
@@ -251,19 +253,40 @@
 
 
 
-    
+
     <header>
         <nav id="navigation">
             <ul class="home">
-                <li class="tab active tColor1" data-target="tab1" data-default><span class="icon-title ico-1">Home</span><i class="las la-home"></i></li>
-                <li class="tab hoverable tColor2" data-target="tab2"><span class="icon-title ico-2">Projects</span><i class="las la-paint-brush"></i></li>
-                <li class="tab hoverable tColor3" data-target="tab3"><span class="icon-title ico-3">About me</span><i class="las la-smile"></i></li>
+                <li class="tab active tColor1" data-target="tab1" data-default><span
+                        class="icon-title ico-1">Home</span><i class="las la-home"></i></li>
+                <li class="tab hoverable tColor2" data-target="tab2"><span class="icon-title ico-2">Projects</span><i
+                        class="las la-paint-brush"></i></li>
+                <li class="tab hoverable tColor3" data-target="tab3"><span class="icon-title ico-3">About me</span><i
+                        class="las la-smile"></i></li>
                 <div class="bar-wrap">
                     <hr class="home-bar">
                 </div>
-                <li><span class="icon-title ico-4">rodrialex.edu@gmail.com<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#bababa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></span><i class="las la-at"></i></li>
-                <li><span class="icon-title ico-5">in/alex-rrr999<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#bababa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></span><i class="lab la-linkedin-in"></i></li>
-                <li><span class="icon-title ico-6">github.com/alex-rrr999<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#bababa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></span><i class="lab la-github-alt"></i></li>
+                <a href="mailto:rodrialex.edu@gmail.com" target="_blank">
+                    <li><span class="icon-title ico-4">rodrialex.edu@gmail.com<svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#bababa" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M7 17l9.2-9.2M17 17V7H7" />
+                            </svg></span><i class="las la-at"></i></li>
+                </a>
+                <a href="https://www.linkedin.com/in/alex-rrr999/" target="_blank">
+                    <li><span class="icon-title ico-5">in/alex-rrr999<svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" viewBox="0 0 24 24" fill="none" stroke="#bababa" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M7 17l9.2-9.2M17 17V7H7" />
+                            </svg></span><i class="lab la-linkedin-in"></i></li>
+                </a>
+                <a href="https://github.com/alex-rrr999/" target="_blank">
+                    <li><span class="icon-title ico-6">github.com/alex-rrr999<svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#bababa" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M7 17l9.2-9.2M17 17V7H7" />
+                            </svg></span><i class="lab la-github-alt"></i></li>
+                </a>
             </ul>
         </nav>
     </header>
@@ -278,15 +301,16 @@
                 <div class="home-wrap-title">
                     <h1>Hi, I'm <span class="orange">Alex!</span></h1>
                     <h1>I'm an aspiring <span class="blue">Data Scientist,</span></h1>
-                    <h1>currently studying cs at <span class="purple">UW</span></h1>
+                    <h1>currently studying at <span class="purple">Cascadia</span></h1>
+                    
                 </div>
             </div>
         </section>
-       
+
         <section id="tab2" class="tab-content">
             <div class="projects-wrap">
                 <div class="projects-wrap-entry">
-                    <img src="./assets/nexus-58acde00.png" id="project-preview">
+                    <img src="./assets/nexus-DDjmVIP7.png" id="project-preview">
                     <div class="project-content">
                         <span class="project-wrap-title-name">NexusMD</span>
                         <span class="project-wrap-title-desc">Patient portal</span>
@@ -295,70 +319,107 @@
                                 <div class="project-wrap-tags-rect">web</div>
                                 <div class="project-wrap-tags-rect">database</div>
                             </div>
-                            <a class="project-wrap-tags-rect-a" href="https://github.com/bautista73/nexus-md" target="_blank">github<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#bababa" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+                            <a class="project-wrap-tags-rect-a" href="https://github.com/bautista73/nexus-md"
+                                target="_blank">github<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    viewBox="0 0 24 24" fill="none" stroke="#bababa" stroke-width="2.4"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M7 17l9.2-9.2M17 17V7H7" />
+                                </svg>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="projects-wrap-entry">
-                    <img src="./assets/readme-5fe206e2.png" id="project-preview">
+                    <img src="./assets/readme-D5g5LUt4.png" id="project-preview">
                     <div class="project-content">
                         <span class="project-wrap-title-name">ReadMe Helper</span>
                         <span class="project-wrap-title-desc">Create ReadMe files with ease</span>
                         <div class="project-wrap-bottom">
                             <div class="project-wrap-tags">
-                                <div class="project-wrap-tags-rect">web</div>
-                                <div class="project-wrap-tags-rect">misc</div>
+                                <div class="project-wrap-tags-rect">WEB</div>
+                                <div class="project-wrap-tags-rect">MISC</div>
                             </div>
-                            <a class="project-wrap-tags-rect-a" href="https://github.com/alex-rrr999/readme-helper" target="_blank">github<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#bababa" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+                            <a class="project-wrap-tags-rect-a" href="https://github.com/alex-rrr999/readme-helper"
+                                target="_blank">github<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    viewBox="0 0 24 24" fill="none" stroke="#bababa" stroke-width="2.4"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M7 17l9.2-9.2M17 17V7H7" />
+                                </svg>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
         <section id="tab3" class="tab-content">
             <div class="about-left-right-wrap">
-            <div class="center-wrapper">
-                <div class="about-wrap-left">
-                    <div class="about-wrap-left-main">
-                        <h1>Hi, I'm <span class="orange">Alex!</span></h1>
-                        <h1>I'm an aspiring <span class="blue">Data Scientist,</span></h1>
-                        <h1>currently studying cs at <span class="purple">UW</span></h1>
+                <div class="center-wrapper">
+                    <div class="about-wrap-left">
+
+
+                        <div class="about-wrap-left-main">
+                            <div class="about-wrap-left-wrapper">
+                                <h1><span class="name-about-wrap">Alexander Rodriguez</span></h1>
+                                <div class="about-image"><img src="./assets/web-CFlh0Mcv.png"></div>
+                            </div>
+                            <div class="about-wrapper-wrapper">
+                                <div class="about-tag-wrap">
+                                    <div class="about-tag-rect"><img src="./assets/wireframe-globe-svg-svg-j_A4sXnE.png"
+                                            class="abt-svg" alt="globe"></img>USA</div>
+                                    <div class="about-tag-rect"><img src="./assets/position-marker-svg-svg-B6ZhWMi6.png"
+                                            class="abt-svg" alt="pos"></img>WASHINGTON</div>
+                                    <div class="about-tag-rect"><img src="./assets/graduate-cap-svg-svg-B65SwGt8.png" class="abt-svg"
+                                            alt="school"></img>CASCADIA COLLEGE</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
                 <div class="about-wrap-right">
+
+
                     <div class="about-wrap-body">
-                        <h1>Hi, I'm <span class="orange">Alex!</span></h1>
-                        <h1>I'm an aspiring <span class="blue">Data Scientist,</span></h1>
-                        <h1>currently studying cs at <span class="purple">UW</span></h1>
+                        <h1><span class="about-title">More</span></h1>
+                        <div class="about-more">gdfgdgfdsgfgdfsgdfsgkbdsfgkjhdsfgkhdfgkhbdfgkjhbdkjhbdsgkjhdbsfgkjhb </div>
+                        <div class="about-show-more">Show More</div>
+                        Yo none of this is finished ATM good luck
                     </div>
+
+
                     <div class="about-wrap-body">
-                        <h1>Hi, I'm <span class="orange">Alex!</span></h1>
-                        <h1>I'm an aspiring <span class="blue">Data Scientist,</span></h1>
-                        <h1>currently studying cs at <span class="purple">UW</span></h1>
+                        <h1><span class="about-title">Skills</span></h1>
+                        <div class="skills-icons">
+                            <span class="svg-wrapper"><span class="skills-ico"><img src="./assets/c-DxZnmoga.png"></span></span>
+                            <span class="svg-wrapper"><span class="skills-ico"><img src="data:image/png;base64,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"></span></span>
+                            <span class="svg-wrapper"><span class="skills-ico"><img src="data:image/png;base64,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"></span></span>
+                            <span class="svg-wrapper"><span class="skills-ico"><img src="./assets/logo-javascript-svg-sHgEwUjP.png"></span></span>
+                            <span class="svg-wrapper"><span class="skills-ico"><img src="./assets/python-5-svg-D5dkGoSS.png"></span></span>
+
+
+                        </div>
+
+
                     </div>
+
                     <div class="about-wrap-body">
-                        <h1>Hi, I'm <span class="orange">Alex!</span></h1>
-                        <h1>I'm an aspiring <span class="blue">Data Scientist,</span></h1>
-                        <h1>currently studying cs at <span class="purple">UW</span></h1>
+                        <h1><span class="about-title">Experience</span></h1>
+                        none LOL!!!!!
                     </div>
+
                     <div class="about-wrap-body">
-                        <h1>Hi, I'm <span class="orange">Alex!</span></h1>
-                        <h1>I'm an aspiring <span class="blue">Data Scientist,</span></h1>
-                        <h1>currently studying cs at <span class="purple">UW</span></h1>
+                        <h1><span class="about-title">Contact</span></h1>
                     </div>
-                    <div class="about-wrap-body">
-                        <h1>Hi, I'm <span class="orange">Alex!</span></h1>
-                        <h1>I'm an aspiring <span class="blue">Data Scientist,</span></h1>
-                        <h1>currently studying cs at <span class="purple">UW</span></h1>
-                    </div>
+
+
+
+
                 </div>
             </div>
         </section>
-    </main>
-    
-    <!-- <script type="module" src="./js/3d.js"></script> -->
+    </main>
 </body>
+
 </html>
+
+<!-- helloa -->

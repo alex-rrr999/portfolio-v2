@@ -285,7 +285,7 @@ tabs.forEach((tab) => {
 
           case 'tab2':
 
-          document.documentElement.style.overflow = 'auto';
+          document.documentElement.style.overflow = 'hidden';
           document.body.scroll = "yes";
 
 
@@ -311,7 +311,7 @@ tabs.forEach((tab) => {
 
           case 'tab3':
 
-          document.documentElement.style.overflow = 'auto';
+          document.documentElement.style.overflowY = 'auto';
           document.body.scroll = "yes";
 
 
